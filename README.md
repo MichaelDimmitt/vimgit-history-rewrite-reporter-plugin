@@ -13,3 +13,5 @@ Vim plugin that adds how many times a commit's history has been edited to it's c
 `curl -o ~/.config/vim_history_reporter/vimrc.vim --create-dirs https://raw.githubusercontent.com/MichaelDimmitt/vimgit-history-rewrite-reporter-plugin/main/vimrc.vim`
 2. Create a new ~/.vimrc if needed and add this line to your ~/.vimrc  
 `source ~/.config/vim_history_reporter/vimrc.vim`
+
+ 
