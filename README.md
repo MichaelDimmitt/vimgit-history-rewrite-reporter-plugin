@@ -1,7 +1,7 @@
 # vimgit-history-rewrite-reporter-plugin
 
 ## Description
-vim plugin that adds how many a commit's history has been edited to it's commit description.
+Vim plugin that adds how many times a commit's history has been edited to it's commit description.
 
 ## Links
 [How to move cursor to end of file in command mode.](https://stackoverflow.com/questions/17012308/move-cursor-to-end-of-file-in-vim)
