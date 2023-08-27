@@ -1,4 +1,4 @@
-autocmd VimEnter *.git/COMMIT_EDITMSG /This commit has been edited/ | s/\d\+/\=(submatch(0)+1)/g
+"  autocmd VimEnter *.git/COMMIT_EDITMSG /This commit has been edited/ | s/\d\+/\=(submatch(0)+1)/g
 " command breakdown: 
 " 1. When this file becomes active in vim run the commands to the right of this command:
 " -----> autocmd VimEnter *.git/COMMIT_EDITMSG
@@ -8,3 +8,6 @@ autocmd VimEnter *.git/COMMIT_EDITMSG /This commit has been edited/ | s/\d\+/\=(
 " ----->  | 
 " 4. given the current cursors line replace the current number found with itself + 1.
 " -----> s/\d\+/\=(submatch(0)+1)/g 
+
+" placeholder command till if statement is added that creates the string if it does not exist
+autocmd VimEnter *.git/COMMIT_EDITMSG $r! date
