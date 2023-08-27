@@ -16,4 +16,8 @@ https://dev.to/iggredible/learning-vim-regex-26ep
 2. Create a new ~/.vimrc if needed and add this line to your ~/.vimrc  
 `source ~/.config/vim_history_reporter/vimrc.vim`
 
-
+## How to contribute
+1. Clone down this project
+2. Point your ~/.vimrc to source the vimrc.vim located in this project instead of the config folder outlined in the install instructions.
+3. make a temp commit by adding a space to the readme.
+4. run git commit --amend a few times.
