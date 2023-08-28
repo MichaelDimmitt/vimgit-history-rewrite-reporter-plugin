@@ -16,4 +16,4 @@ function CreateEditText()
   $put _ | $norm AThis commit has been edited 1 times
 endfunction
 
-" to see this same code with comments added view .vimrc.vim.withcomments
+" to see this same code with comments added view .vimrc.vim.withcomments.vim

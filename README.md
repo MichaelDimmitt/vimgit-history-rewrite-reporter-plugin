@@ -26,5 +26,5 @@ Vim plugin that adds how many times a commit's history has been edited to it's c
 
 ## Src
 The current code is located at: vimrc.vim
-The code with comments added is located at: .vimrc.vim.withcomments
+The code with comments added is located at: .vimrc.vim.withcomments.vim
 
