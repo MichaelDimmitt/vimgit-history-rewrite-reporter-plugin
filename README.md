@@ -24,4 +24,7 @@ Vim plugin that adds how many times a commit's history has been edited to it's c
 3. make a temp commit by adding a space to the readme.  
 4. run git commit --amend a few times.  
 
+## Src
+The current code is located at: vimrc.vim
+The code with comments added is located at: .vimrc.vim.withcomments
 
