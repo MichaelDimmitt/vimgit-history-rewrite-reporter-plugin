@@ -8,7 +8,17 @@
 " autocmd VimEnter *.git/COMMIT_EDITMSG $r! date
 " autocmd VimEnter *.git/COMMIT_EDITMSG /This commit has been edited/ | s/\d\+/\=(submatch(0)+1)/g
 
-autocmd VimEnter *.git/COMMIT_EDITMSG call IncrementEditText
+autocmd VimEnter *.git/COMMIT_EDITMSG call CreateOrIncrementLine()
+
+function CreateOrIncrementLine()
+  if search("This commit has been edited foo", "nw")
+    echo "I am true"
+    "call IncrementEditText()
+  else 
+    echo "I am false"
+    "call IncrementEditText()
+  endif
+endfunction
 
 function IncrementEditText()
   " command breakdown:
