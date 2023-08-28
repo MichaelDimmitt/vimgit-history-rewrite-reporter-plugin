@@ -11,12 +11,10 @@
 autocmd VimEnter *.git/COMMIT_EDITMSG call CreateOrIncrementLine()
 
 function CreateOrIncrementLine()
-  if search("This commit has been edited foo", "nw")
-    echo "I am true"
-    "call IncrementEditText()
+  if search("This commit has been edited ", "nw")
+    call IncrementEditText()
   else 
-    echo "I am false"
-    "call IncrementEditText()
+    call CreateEditText()
   endif
 endfunction
 
@@ -29,4 +27,13 @@ function IncrementEditText()
   " 3. given the current cursors line replace the current number found with itself + 1.
   " -----> s/\d\+/\=(submatch(0)+1)/g
   /This commit has been edited/ | s/\d\+/\=(submatch(0)+1)/g
+endfunction
+
+function CreateEditText()
+  " https://superuser.com/a/303415/644627
+  " command breakdown:
+  " 1. Add a new line to the end of the file this also puts the cursor at the end of the file
+  " 2. If the first command succeeds run the second command
+  " 3. Execute a normal command at the end of the file to write the following text "This file has been edited 0 times"
+  $put _ | $norm AThis commit has been edited 0 times
 endfunction
