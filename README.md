@@ -10,6 +10,7 @@ Vim plugin that adds how many times a commit's history has been edited to it's c
 [Quick note about submatch](https://stackoverflow.com/questions/67353566/how-does-the-submatch-command-work-in-vim)
 [Nice document on vim regex](https://dev.to/iggredible/learning-vim-regex-26ep)
 [increment all numbers in a document](https://stackoverflow.com/questions/10420797/vim-regex-increment-all-numbers-by-1)
+[writing functions in vim!](https://learnvim.irian.to/vimscript/vimscript_functions)
 
 ## How to add to your vimrc without a plugin.
 1. Download the file to a config folder  
