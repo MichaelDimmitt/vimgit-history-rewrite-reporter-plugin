@@ -29,3 +29,5 @@ Vim plugin that adds how many times a commit's history has been edited to it's c
 The current code is located at: vimrc.vim
 The code with comments added is located at: .vimrc.vim.withcomments.vim
 
+## See it in action
+![assets/vim-git-history-plugin.gif](assets/vim-git-history-plugin.gif)
