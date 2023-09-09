@@ -1,4 +1,4 @@
-# VimGit (a history rewrite reporter plugin)
+  # VimGit (a history rewrite reporter plugin)
 
 ## Description
 Vim plugin that adds how many times a commit's history has been edited to it's commit description.
