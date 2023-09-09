@@ -41,3 +41,8 @@ function CreateEditText()
   " 3. Execute a normal command at the end of the file to write the following text "This file has been edited 0 times"
   $put _ | $norm AThis commit has been edited 1 times
 endfunction
+
+" TODO explore groups.
+" augroup GIT_EDIT | autocmd!
+"  autocmd VimEnter *.git/COMMIT_EDITMSG call CreateOrIncrementLine()
+" augroup end
